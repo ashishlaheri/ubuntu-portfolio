@@ -1076,7 +1076,7 @@ const ProjectsApp = ({ openBrowser }) => {
 
             {/* GitHub Button */}
             <button
-              onClick={() => openBrowser(p.github)}
+              onClick={() => window.open(p.github, '_blank', 'noopener,noreferrer')}
               className="w-full flex items-center justify-center gap-2 py-3 rounded-lg text-white font-semibold shadow-sm hover:opacity-90 transition-opacity"
               style={{ backgroundColor: p.color }}
             >
